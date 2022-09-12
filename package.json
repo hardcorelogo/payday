@@ -1,0 +1,29 @@
+{
+  "name": "payday",
+  "version": "1.0.0",
+  "description": "Crypto markets scrapper",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "format": "prettier 'src/**/*.ts' --write --list-different",
+    "lint": "prettier 'src/**/*.ts' --check"
+  },
+  "engines": {
+    "node": ">=16.16.0",
+    "npm": ">=8.17.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:carbitrage/payday.git"
+  },
+  "author": "Dmitrii Bormotov",
+  "license": "MIT",
+  "devDependencies": {
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.2",
+    "firebase-admin": "^11.0.1",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.1.0",
+    "typescript": "^4.8.3"
+  }
+}

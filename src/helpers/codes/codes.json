@@ -1,0 +1,20 @@
+[
+  {
+    "name": "BTC_USDT",
+    "bitfinex": "tBTCUST",
+    "binance": "BTCUSDT",
+    "poloniex": "BTC_USDT"
+  },
+  {
+    "name": "ETH_USDT",
+    "bitfinex": "tETHUST",
+    "binance": "ETHUSDT",
+    "poloniex": "ETH_USDT"
+  },
+  {
+    "name": "XRP_USDT",
+    "bitfinex": "tXRPUST",
+    "binance": "XRPUSDT",
+    "poloniex": "XRP_USDT"
+  }
+]
