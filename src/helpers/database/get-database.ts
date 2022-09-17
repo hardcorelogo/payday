@@ -9,8 +9,7 @@ const credentials = {
 }
 
 async function getDatabaseConnection() {
-  if (getApps().length === 0)
-    initializeApp({credential: cert(credentials)})
+  if (getApps().length === 0) initializeApp({credential: cert(credentials)})
   return getFirestore()
 }
 
