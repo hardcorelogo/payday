@@ -4,6 +4,7 @@
   "description": "Crypto markets scrapper",
   "scripts": {
     "start": "ts-node src/index.ts",
+    "build": "ncc build src/handler.ts",
     "format": "prettier 'src/**/*.ts' --write --list-different",
     "lint": "prettier 'src/**/*.ts' --check"
   },
@@ -17,10 +18,13 @@
   },
   "author": "Dmitrii Bormotov",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "axios": "^0.27.2",
     "dotenv": "^16.0.2",
-    "firebase-admin": "^11.0.1",
+    "firebase-admin": "^11.0.1"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.34.0",
     "prettier": "^2.7.1",
     "ts-node": "^10.9.1",
     "tsconfig-paths": "^4.1.0",
