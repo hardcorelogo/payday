@@ -4,7 +4,7 @@
   "description": "Crypto markets scrapper",
   "scripts": {
     "start": "ts-node src/index.ts",
-    "build": "ncc build src/index.ts",
+    "build": "ncc build src/handler.ts",
     "format": "prettier 'src/**/*.ts' --write --list-different",
     "lint": "prettier 'src/**/*.ts' --check"
   },
