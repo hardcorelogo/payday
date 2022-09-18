@@ -1,0 +1,19 @@
+name: Code Quality
+
+on:
+  push:
+    branches-ignore:
+    - main
+
+jobs:
+  code-quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+      - name: Install dependencies
+        run: npm i
+      - name: Lint
+        run: npm run lint
