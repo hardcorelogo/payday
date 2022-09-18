@@ -5,8 +5,8 @@
   "scripts": {
     "start": "ts-node src/index.ts",
     "build": "ncc build src/handler.ts",
-    "format": "prettier 'src/**/*.ts' --write --list-different",
-    "lint": "prettier 'src/**/*.ts' --check"
+    "format": "prettier src/ --write --list-different",
+    "lint": "prettier src/ --check"
   },
   "engines": {
     "node": ">=16.16.0",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:carbitrage/payday.git"
+    "url": "git@github.com:hardcorelogo/payday.git"
   },
   "author": "Dmitrii Bormotov",
   "license": "MIT",
@@ -25,6 +25,7 @@
   },
   "devDependencies": {
     "@vercel/ncc": "^0.34.0",
+    "aws-sdk": "^2.1218.0",
     "prettier": "^2.7.1",
     "ts-node": "^10.9.1",
     "tsconfig-paths": "^4.1.0",
